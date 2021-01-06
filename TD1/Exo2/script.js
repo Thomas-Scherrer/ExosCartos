@@ -1,8 +1,7 @@
 function maPosition(position) {
-  var infopos = "Position déterminée :\n";
+  var infopos = "Ma position :\n";
   infopos += "Latitude : "+position.coords.latitude +"\n";
   infopos += "Longitude: "+position.coords.longitude+"\n";
-  infopos += "Altitude : "+position.coords.altitude +"\n";
   document.getElementById("infoposition").innerHTML = infopos;
 }
 
