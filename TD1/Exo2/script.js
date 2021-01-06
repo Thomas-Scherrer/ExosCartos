@@ -8,7 +8,11 @@ function success(position) {
   infopos += "Longitude: " + position.coords.longitude + "<br>";
   infopos +=
     "Avec une précision de " + position.coords.accuracy + " mètres" + "<br>";
-    infopos += "Et une vitesse de déplacement de la position égale à " + position.coords.speed + "<br>";
+  infopos +=
+    "Et une vitesse de déplacement de la position égale à " +
+    position.coords.speed +
+    "<br>";
+  infopos += "Voici le timestamp actuel: " + position.timestamp + "<br>";
   document.getElementById("infoposition").innerHTML = infopos;
 }
 
